@@ -257,6 +257,22 @@ img{
     background-color: var(--text-color);
     color: var(--container-color);
 }
+
+.home__button-movil_2{
+    display: inline-block;
+    border: 2px solid var(--text-color);
+    color: var(--title-color);
+    padding: 1rem 2rem;
+    border-radius: .25rem;
+    transition:  .3s;
+    font-weight: var(--font-medium);
+    margin-top: var(--mb-3);
+}
+
+.home__button-movil_2:hover{
+    background-color: var(--text-color);
+    color: var(--container-color);
+}
 /*========== SOCIAL ==========*/
 .social__container{
     grid-template-columns: max-content;
@@ -414,6 +430,15 @@ img{
         grid-template-columns: repeat(2,1fr);
         gap:1rem .5rem;
     }
+    .home__button-movil_2{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .home__button-movil_2{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 968px){
@@ -451,6 +476,7 @@ img{
     .home__button-movil{
         display: none;
     }
+
 
     .references__container{
         grid-template-columns: repeat(2,1fr);
