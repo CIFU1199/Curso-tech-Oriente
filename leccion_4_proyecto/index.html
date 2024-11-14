@@ -1,282 +1,65 @@
 <!DOCTYPE html>
-    <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="./assets/img/Logo_Web.png" alt="Logo" class="logo">
+            <div class="nav-links">
+                <a href="/leccion_4_proyecto/CV1.html">Edward Cifuentes</a>
+                <a href="#persona2">Persona 2</a>
+                <a href="#persona3">Persona 3</a>
+                <a href="#persona4">Persona 4</a>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        </nav>
+    </header>
 
-        <!--========== BOX ICONS ==========-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <main>
+        <div class="persona" id="persona1">
+            <a href="./CV1.html">
+                <img src="./assets/img/Image_cv.png" alt="Edward Cifuentes">
+                <p class="title">Edward Cifuentes</p>
+                <p>Ingeniero en sistemas egresado de la fundación universitaria de San Gil – UNISANGIL, desarrollandor de aplicaciones con React.js.</p>
+            </a>
+        </div>
+        <div class="persona" id="persona2">
+            <a href="persona2.html">
+                <img src="persona2.jpg" alt="Persona 2">
+                <p class="title">Nombre Persona</p>
+                <p>Descripción breve de Persona 2</p>
+            </a>
+        </div>
+        <div class="persona" id="persona3">
+            <a href="persona3.html">
+                <img src="persona3.jpg" alt="Persona 3">
+                <p class="title">Nombre Persona</p>
+                <p>Descripción breve de Persona 3</p>
+            </a>
+        </div>
+        <div class="persona" id="persona4">
+            <a href="persona4.html">
+                <img src="persona4.jpg" alt="Persona 4">
+                <p class="title">Nombre Persona</p>
+                <p>Descripción breve de Persona 4</p>
+            </a>
+        </div>
+    </main>
 
-        <!--========== CSS ==========-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <footer>
+        <p>&copy; 2024 Derechos Reservados</p>
+    </footer>
 
-        <title>CV Edward Cifuentes</title>
-    </head>
-    <body>
-        <!--========== HEADER ==========-->
-        <header class="l-header" id="header">
-            <nav class="nav bd-container">
-                <a href="#" class="nav__logo">Edward Cifuentes</a>
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link">
-                                <i class="nav__icon bx  bx-home"></i>Inicio
-                            </a>
-                        </li>
-                    
-                        <li class="nav__item">
-                            <a href="#profile" class="nav__link">
-                                <i class="nav__icon bx  bx-user"></i>Perfil
-                            </a>
-                        </li>
-                
-                        <li class="nav__item">
-                            <a href="#education" class="nav__link">
-                                <i class="nav__icon bx  bx-book"></i>Estudios
-                            </a>
-                        </li>
-                    
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link">
-                                <i class="nav__icon bx  bx-receipt"></i>Habilidades
-                            </a>
-                        </li>
-                    
-                        <li class="nav__item">
-                            <a href="#experience" class="nav__link">
-                                <i class="nav__icon bx  bx-briefcase-alt"></i>Experiencia
-                            </a>
-                        </li>
-                    
-                        <li class="nav__item">
-                            <a href="#certificate" class="nav__link">
-                                <i class="nav__icon bx  bx-award"></i>Certificados
-                            </a>
-                        </li>
-                    
-                        <li class="nav__item">
-                            <a href="#references" class="nav__link">
-                                <i class="nav__icon bx  bx-link-external"></i>Referencias
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="nav__icon bx  bx-grid-alt"></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main bd-container">
-            <!-- All elements within this div, is generated in PDF -->
-            <div class="resume" id="area-cv">
-                <div class="resume__left">
-                    <!--========== HOME ==========-->
-                    <section class="home" id="home">
-                        <div class="home__container section bd-grid">
-                            <div class="home__data bd-grid">
-                                <img src="./assets/img/Image_cv.png" alt="logo" class="home__img">
-
-                                <h1 class="home__title">EDWARD <b>CIFUENTES</b></h1>
-                                <h3 class="home__profession">Ingeniero de Sistemas</h3>
-                                <!-- Button to generate and download the pdf. Available for desktop. -->
-                                <div>
-                                    <a download="" href="./assets/pdf/CV_Edward_Cifuentes.pdf" class="home__button-movil">Descargar CV</a>
-                                </div>
-
-                            </div>
-                            <div class="home__address bd-grid">
-                                <span class="home__information">
-                                    <i class="bx bx-map home__icon"></i> Km 2, Vía San Gil - Charalá
-                                </span>
-                                <span class="home__information">
-                                    <i class="bx bx-envelope home__icon"></i> edwardcifuentes@unisangil.edu.co
-                                </span>
-                                <span class="home__information">
-                                    <i class="bx bx-phone home__icon"></i>+57 322-321-9673
-                                </span>
-                            </div>
-
-                        </div>
-                        <!-- Theme change button -->
-                        
-    
-
-                    </section>          
-                    
-                    <!--========== SOCIAL ==========-->
-                    <section class="social section">
-                        <h1 class="section-title">Redes</h1>
-                        <div class="social__container bd-grid">
-                            <a href="https://www.linkedin.com/in/edward-camilo-cifuentes-moreno-a38a36229/" target="_blank" class="social__link">
-                                <i class='social__icon bx bxl-linkedin-square'></i> LinkedIn
-                            </a>
-                            <a href="https://www.facebook.com/edwardcamilo.cifuentesmoreno/" target="_blank" class="social__link">
-                                <i class='social__icon bx bxl-facebook-square' ></i> Facebook
-                            </a>
-                            <a href="https://www.instagram.com/cifu1199/" target="_blank" class="social__link">
-                                <i class='social__icon bx bxl-instagram'></i> Instagram
-                            </a>
-                        </div>
-                    </section>
-
-                    <!--========== PROFILE ==========-->
-                    <section class="profile section" id="profile">
-                        <h2 class="section-title">Perfil</h2>
-
-                        <p class="profile__description">
-                            Desarrollador de Software | Ingeniero en Sistemas | Administrador de Bases de datos egresado de la fundación universitaria de San Gil – UNISANGIL, participé en el semillero de investigación PDM y el semillero de investigación de redes donde me desempeñé como desarrollador obteniendo experiencia en el área, actualmente estoy desarrollando aplicaciones con JavaScript y todo su entorno web, adicionalmente cuento con conocimientos en el área de metodologías ágiles.
-                        </p>
-                    </section>
-                    
-                    <!--========== EDUCATION ==========-->
-                    <section class="education section" id="education">
-                        <h2 class="section-title">Estudios</h2>
-                        <div class="education__container bd-grid">
-                            <div class="education__content">
-                                <div class="education__time">
-                                    <span class="education__rounder"></span>
-                                    <span class="education__line"></span>
-                                </div>
-                                <div class="education__data bd-grid">
-                                    <h3 class="education__title">Ingeniero de Sistemas</h3>
-                                    <span class="education__studies">UNISANGIL</span>
-                                    <span class="education__year">2017 - 2022</span>
-                                </div>
-                            </div>
-                            <div class="education__content">
-                                <div class="education__time">
-                                    <span class="education__rounder"></span>
-                                    <span class="education__line"></span>
-                                </div>
-                                <div class="education__data bd-grid">
-                                    <h3 class="education__title">Git+Github , Master en CSS , JavaScript Moderno</h3>
-                                    <span class="education__studies">Udemy</span>
-                                    <span class="education__year">2021 - 2022</span>
-                                </div>
-                            </div>
-                            <div class="education__content">
-                                <div class="education__time">
-                                    <span class="education__rounder"></span>
-                                    <!-- <span class="education__line"></span> -->
-                                </div>
-                                <div class="education__data bd-grid">
-                                    <h3 class="education__title">ORACLE NEXT EDUCATION</h3>
-                                    <span class="education__studies">Oracle / Alura</span>
-                                    <span class="education__year">2023</span>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-
-                    <!--========== SKILLS  ==========-->
-                    <section class="skills section" id="skills">
-                        <h2 class="section-title">Habilidades</h2>
-                        <div class="skills__content bd-grid">
-                            <ul class="skills_data">
-                                <li class="skills__name">
-                                    <!--<span class="skills__circle"></span>-->
-                                    <i class='skills__logo bx bxl-html5'></i> HTML
-                                </li>
-                                <li class="skills__name">
-                                    <!--<span class="skills__circle"></span>-->
-                                    <i class='skills__logo bx bxl-css3' ></i> CSS
-                                </li>
-                                <li class="skills__name">
-                                    <!--<span class="skills__circle"></span>-->
-                                    <i class='skills__logo bx bxl-javascript' ></i> JavaScript
-                                </li>
-                            </ul>
-                            <ul class="skills_data">
-                                <li class="skills__name">
-                                    <!--<span class="skills__circle"></span>-->
-                                    <i class='skills__logo bx bxs-data' ></i> SQL
-                                </li>
-                                <li class="skills__name">
-                                    <!--<span class="skills__circle"></span>-->
-                                    <i class='skills__logo bx bxl-git'></i> Git
-                                </li>
-                                <li class="skills__name">
-                                    <!--<span class="skills__circle"></span>-->
-                                    <i class='skills__logo bx bx-code-block' ></i> Bash
-                                </li>
-                            </ul>
-                        </div>
-
-                    </section>
-
-                </div>
-
-                <div class="resume__right">
-                    <!--========== EXPERIENCE ==========-->
-                    <section class="experience section" id="experience">
-                        <h2 class="section-title">Experiencia</h2>
-                        <div class="experience__container bd-grid">
-                            <div class="experience__content">
-                                <div class="experience__time">
-                                    <span class="experience__rounder"></span>
-                                    <span class="experience__line"></span>
-                                </div>
-                                <div class="experience__data bd-grid">
-                                    <h3 class="experience__title">Docente de Tecnología e informática</h3>
-                                    <span class="experience__company">Colegio Liceo Superior Rafael Pombo | 2021</span>
-                                </div>
-                            </div>
-                            <div class="experience__content">
-                                <div class="experience__time">
-                                    <span class="experience__rounder"></span>
-                                    <span class="experience__line"></span>
-                                </div>
-                                <div class="experience__data bd-grid">
-                                    <h3 class="experience__title">Analista De Software</h3>
-                                    <span class="experience__company">UNISANGIL | 2023</span>
-                                </div>
-                            </div>
-                            <div class="experience__content">
-                                <div class="experience__time">
-                                    <span class="experience__rounder"></span>
-                                    
-                                </div>
-                                <div class="experience__data bd-grid">
-                                    <h3 class="experience__title">Administrador de Bases de Datos</h3>
-                                    <span class="experience__company">UNISANGIL | 2023 - 2024</span>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!--========== CERTIFICATES ==========-->
-                    <section class="certificate section" id="certificates">
-                        <h2 class="section-title">Certificados</h2>
-                    </section>
-
-                    <!--========== REFERENCES ==========-->
-                    <section class="references section" id="references">
-                        
-                    </section>
-
-                    <!--========== LANGUAGES ==========-->
-                    <section class="languages section">
-                        
-                    </section>
-                    
-                    <!--========== INTERESTS ==========-->
-                    <section class="interests section">
-                        
-                    </section>
-                </div>
-            </div>        
-        </main>
-
-        <!--========== SCROLL TOP ==========-->
         
-
-        <!--========== HTML2PDF ==========-->
-        <script src="./assets/js/html2pdf.bundle.min.js"></script>
-
-        <!--========== MAIN JS ==========-->
-        <script src="./assets/js/main.js"></script>
-    </body>
+</body>
 </html>
