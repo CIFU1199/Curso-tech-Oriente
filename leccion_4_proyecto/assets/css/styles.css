@@ -423,6 +423,52 @@ img{
     visibility: visible;
     bottom: 5rem;
 }
+
+/*========== FORM ==========*/
+.contact__form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__form h3 {
+    font-size: 1 rem;
+    color: var(--text-color-light);
+    margin-bottom: 1rem;
+}
+
+.contact__form input[type="text"],
+.contact__form input[type="email"],
+.contact__form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.submit {
+    display: inline-block;
+    border: 2px solid var(--text-color);
+    color: var(--title-color);
+    padding: 1rem 2rem;
+    border-radius: .25rem;
+    transition:  .3s;
+    font-weight: var(--font-medium);
+    margin-top: var(--mb-3);
+    background-color: transparent;
+    text-align: center;
+}
+
+.submit:hover{
+    background-color: var(--text-color);
+    color: var(--container-color);
+}
+
+.lb-title{
+    
+}
 /*========== MEDIA QUERIES ==========*/
 /* For small devices, menu two columns */
 @media screen and (max-width: 320px) {
