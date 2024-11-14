@@ -466,9 +466,6 @@ img{
     color: var(--container-color);
 }
 
-.lb-title{
-    
-}
 /*========== MEDIA QUERIES ==========*/
 /* For small devices, menu two columns */
 @media screen and (max-width: 320px) {
